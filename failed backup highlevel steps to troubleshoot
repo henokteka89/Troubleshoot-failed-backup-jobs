@@ -1,0 +1,6 @@
+1. Check the Job History
+2. Review SQL Server Error Log
+"spid66	Extend Disk Backup:  failure on backup device 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\StackOverflow2013\DIFF\StackOverflow2013_DIFF_20240822_154609.bak'. Operating system error 112(There is not enough space on the disk.)."
+3. Check sql server log - at the same as the error log, there is a log file generated and dumped in installation file path under Log.
+C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Log (mostly). Find "failed" and see the reason.
+ 4. Check Blockings sp_who2. Check disk space etc.
